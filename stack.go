@@ -17,18 +17,16 @@ func (s *Stack) Push(v interface{}) {
 func (s *Stack) Pop() (interface{}, error) {
 	if s.list.Size() == 0 {
 		return 0, errors.New("stack is empty")
-	} else {
-		return s.list.RemoveFirst()
 	}
+	return s.list.RemoveFirst()
 }
 
 // Peek looks at the object at the top of this stack without removing it from the stack.
 func (s *Stack) Peek() (interface{}, error) {
 	if s.list.Size() == 0 {
 		return 0, errors.New("stack is empty")
-	} else {
-		return s.list.GetFirst()
 	}
+	return s.list.GetFirst()
 }
 
 // IsEmpty tests if this stack is empty.
