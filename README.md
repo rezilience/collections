@@ -1,2 +1,2 @@
 # collections
-Some collections inspired from Java because I love them
+Some common collections inspired by Java collections 

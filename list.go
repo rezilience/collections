@@ -9,6 +9,7 @@ type (
 		next     *node
 	}
 
+	// List is a simple doubly linked list implementation.
 	List struct {
 		head *node
 		tail *node
